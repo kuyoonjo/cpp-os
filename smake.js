@@ -53,7 +53,7 @@ const targets = items.map(item => {
     ];
     files = ['test/' + item + '.cc'];
   };
-  Object.defineProperty(win_x86_64, 'name', { value: item + '_win_x86_64' });
+  Object.defineProperty(win_x86_64, 'name', { value: item + '_win32_x86_64' });
   return [darwin_arm64, linux_arm64, win_x86_64];
 }).reduce((a, b) => a.concat(b), []);
 

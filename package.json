@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compdb:darwin": "smake build --compdb arch_darwin_arm64 homedir_darwin_arm64 network_interfaces_darwin_arm64 tmpdir_darwin_arm64",
+    "compdb:linux": "smake build --compdb arch_linux_arm64 homedir_linux_arm64 network_interfaces_linux_arm64 tmpdir_linux_arm64",
+    "compdb:win32": "smake build --compdb arch_win32_x86_64 homedir_win32_x86_64 network_interfaces_win32_x86_64 tmpdir_win32_x86_64"
   },
   "author": "Yu Chen",
   "license": "ISC",
   "devDependencies": {
-    "smake": "^0.3.11"
+    "smake": "^0.3.12"
   }
 }
